@@ -39,9 +39,10 @@ class ActionCoronaTrackerVietNam(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         today = date.today()
-        yesterday = today - timedelta(days = 1)
+        # yesterday = today - timedelta(days = 1)
 
-        url = f"https://api.covid19api.com/live/country/vietnam/status/confirmed/date/{yesterday}"
+        # url = f"https://api.covid19api.com/live/country/vietnam/status/confirmed/date/{yesterday}"
+        url = "https://api.coronatracker.com/v3/stats/worldometer/country?countryCode=VN"
 
         payload={}
         headers = {}
@@ -49,9 +50,12 @@ class ActionCoronaTrackerVietNam(Action):
         response = requests.request("GET", url, headers=headers, data=payload).json()
         response = response[0]
         new_day = today.strftime("%d/%m/%Y")
-        str = f"Số ca nhiễm covid ở Việt Nam tính đến ngày {new_day}:<br>\
-                - Tổng số ca nhiễm: {response['Confirmed']:,}<br>\
-                - Tổng số ca tử vong: {response['Deaths']:,}."
+        str = f"Tình hình covid ở Việt Nam ngày {new_day}:<br>\
+                - Số ca mới hôm nay: {response['dailyConfirmed']:,}<br>\
+                - Số ca tử vong hôm nay: {response['dailyDeaths']:,}<br>\
+                - Tổng số ca nhiễm: {response['totalConfirmed']:,}<br>\
+                - Tổng số ca tử vong: {response['totalDeaths']:,}<br>\
+                - Tổng số ca đã hồi phục: {response['totalRecovered']:,}."
         dispatcher.utter_message(text=str)
 
         return []
@@ -68,16 +72,20 @@ class ActionCoronaTrackerWorld(Action):
 
         today = date.today()
 
-        url = "https://api.covid19api.com/world/total"
+        # url = "https://api.covid19api.com/world/total"
+        url = "https://api.coronatracker.com/v3/stats/worldometer/global"
 
         payload={}
         headers = {}
 
         response = requests.request("GET", url, headers=headers, data=payload).json()
         today = today.strftime("%d/%m/%Y")
-        str = f"Số ca nhiễm covid trên toàn thế giới tính đến ngày {today}:<br>\
-                - Tổng số ca nhiễm: {response['TotalConfirmed']:,}<br>\
-                - Tổng số ca tử vong: {response['TotalDeaths']:,}."
+        str = f"Tình hình covid trên Thế Giới ngày {today}:<br>\
+                - Số ca mới hôm nay: {response['totalNewCases']:,}<br>\
+                - Số ca tử vong hôm nay: {response['totalNewDeaths']:,}<br>\
+                - Tổng số ca nhiễm: {response['totalConfirmed']:,}<br>\
+                - Tổng số ca tử vong: {response['totalDeaths']:,}<br>\
+                - Tổng số ca đã hồi phục: {response['totalRecovered']:,}."
         dispatcher.utter_message(text=str)
 
         return []
