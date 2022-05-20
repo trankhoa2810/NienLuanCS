@@ -1,0 +1,170 @@
+version: "3.0"
+
+intents:
+  - help
+  - what_is_the_covid_19 #Covid 19 là gì? 
+  - manifestations_of_covid_19_disease # Các triệu chứng của covid 19?
+  - treat_covid_19_at_home # Cách điều trị covid 19 tại nhà?
+  - preventing_the_spread_of_covid_19 # Cách phòng ngừa lây nhiễm covid 19?
+  - vaccine_time # Thời gian vaccine có tác dụng?
+  - what_is_the_post_covid_19 # Hậu covid 19 là gì?
+  - symptoms_of_post_covid_19 # Biểu hiện của hậU covid?
+  - pet_and_human # Thú cưng có lây covid cho người hay không?
+  - benefits_of_vaccination_against_covid_19 # Lợi ích của tiêm vắc xin
+  - vaccine_safety # Tiêm vắc xin có an toàn không?
+  - vaccine_side_effects # Vắc xin có tác dụng phụ không?
+  - thanks # Lời cảm ơn
+  - goodbye # Tạm biệt
+  - bot_challenge # Bot trả lời thông tin.
+  - how_many_case_in_day
+  - how_many_case_on_the_world
+
+actions:
+  - action_corona_tracker_viet_nam
+  - action_corona_tracker_on_the_world
+
+responses:
+  utter_question:
+  - text: "Bạn cần tư vấn gì về covid-19?"
+
+  utter_help:
+  - text: "Bạn có thể hỏi các câu hỏi dưới đây!<br>
+  - Covid-19 là gì?<br>
+  - Các triệu chứng của bệnh covid-19 là gì?<br>
+  - Cách điều trị covid-19 tại nhà?<br>
+  - Cách phòng ngừa lây nhiễm covid-19?<br>
+  - Tiêm Vaccine có an toàn không?<br>
+  - Lợi ích khi tiêm vắc xin là gì?<br>
+  - Thời gian vaccine có tác dụng kéo dài bao lâu?<br>
+  - Vắc xin có tác dụng phụ không?<br>
+  - Hậu covid là gì?<br>
+  - Những biểu hiện của hậu covid là gì?<br>
+  - Thú cưng có lây covid-19 cho người được hay không?<br>
+  - Số ca nhiễm covid ở Việt Nam hôm nay?<br>
+  - Số ca nhiễm covid trên thế giới hôm nay?"
+
+  utter_what_is_the_covid_19:
+  - text: " COVID-19 (bệnh vi-rút corona 2019) là một bệnh do vi-rút có tên SARS-CoV-2 gây ra<br>
+  và được phát hiện vào tháng 12 năm 2019 ở Vũ Hán, Trung Quốc.<br>
+  Căn bệnh này rất dễ lây lan và đã nhanh chóng lan ra khắp thế giới.<br>
+    COVID-19 thường gây ra các triệu chứng hô hấp,<br>
+  có thể cảm thấy giống như cảm lạnh, cúm hoặc viêm phổi.<br>
+  COVID-19 có thể tấn công không chỉ phổi và hệ hô hấp của quý vị.<br>
+  Các bộ phận khác của cơ thể quý vị cũng có thể bị ảnh hưởng bởi căn bệnh này."
+
+  utter_manifestations_of_covid_19_disease:
+  - text: " Các triệu chứng của covid-19 là:<br>
+  - Sốt hoặc ớn lạnh<br>
+  - Ho<br>
+  - Hụt hơi hoặc khó thở<br>
+  - Mệt mỏi<br>
+  - Đau cơ hoặc đau người<br>
+  - Đau đầu<br>
+  - Mới mất vị giác hoặc khứu giác<br>
+  - Đau họng<br>
+  - Ngạt mũi hoặc chảy nước mũi<br>
+  - Buồn nôn hoặc nôn mửa<br>
+  - Tiêu chảy<br>
+  - Gặp vấn đề về giấc ngủ<br>
+  - Chóng mặt khi đứng dậy (choáng váng)<br>
+  - Phát ban<br>
+  - Thay đổi tâm trạng<br>
+  - Thay đổi về chu kỳ kinh nguyệt."
+
+  utter_treat_covid_19_at_home:
+  - text: " Cách tự điều trị covid_19 tại nhà:<br>
+  - Trong thời gian cách ly, bạn không được đi làm, đi học hoặc đi đến nơi công cộng.<br>
+  Hãy nhờ một người khác mang nhu yếu phẩm đến cho bạn.<br>
+  - Giữ khoảng cách ít nhất 1 mét với những người khác, kể cả với người nhà.<br>
+  - Đeo khẩu trang y tế để bảo vệ người khác, kể cả khi/trong trường hợp bạn cần liên hệ với nhân viên y tế để được trợ giúp.<br>
+  - Rửa tay thường xuyên.<br>
+  - Ở trong một phòng tách biệt với những thành viên khác trong gia đình. Nếu không được, hãy đeo khẩu trang y tế.<br>
+  - Giữ phòng thông thoáng.<br>
+  - Nếu bạn ở chung phòng với người khác, hãy kê giường cách nhau ít nhất 1 mét.<br>
+  - Tự theo dõi trong 14 ngày xem bạn có triệu chứng nào không.<br>
+  - Gọi điện cho nhà cung cấp dịch vụ y tế của bạn ngay lập tức nếu bạn có bất kỳ dấu hiệu nguy hiểm nào sau đây:<br>
+  khó thở, mất khả năng nói hoặc cử động, lú lẫn hoặc đau ngực.<br>
+  - Duy trì tinh thần lạc quan bằng cách tập thể dục tại nhà và giữ liên lạc với người thân qua điện thoại hoặc trên mạng."
+
+  utter_preventing_the_spread_of_covid_19:
+  - text: " Cách phòng ngừa covid-19:<br>
+  - Đeo khẩu trang.<br>
+  - Rửa tay thường xuyên bằng xà phòng và nước. Sử dụng dung dịch sát trùng tay nếu không có xà phòng và nước.<br>
+  - Giữ khoảng cách 6 feet(~1.2m) với những người không sống cùng bạn.<br>
+  - Tiêm vắc-xin COVID-19 đầy đủ, đúng hạn.<br>
+  - Trong đó, tiêm chủng là cách tốt nhất để làm giảm sự lây lan<br>
+  của SARS-CoV-2, loại vi-rút gây bệnh COVID-19." 
+
+  utter_vaccine_time:
+  - text: "Các nhà khoa học đang theo dõi khả năng bảo vệ của vắc-xin ngừa COVID-19 kéo dài được bao lâu.<br>
+  Vắc-xin ngừa COVID-19 có hiệu quả tốt giúp ngăn ngừa bệnh nghiêm trọng, tỉ lệ nhập viện và tử vong.<br>
+  Tuy nhiên, các chuyên gia y tế công cộng đang thấy khả năng bảo vệ của vắc-xin ngừa COVID-19 giảm dần theo thời gian,<br>
+  đặc biệt là đối với một số nhóm người nhất định. Vì lý do này, CDC khuyến nghị mọi người từ 12 tuổi trở lên nên<br>
+  tiêm mũi nhắc lại để có khả năng bảo vệ tốt nhất chống lại COVID-19."
+
+  utter_what_is_the_post_covid_19:
+  - text: " Tính đến ngày 2021 tháng 7, hội chứng \"COVID kéo dài\" còn gọi là di chứng hậu COVID<br>
+  có thể được coi là một dạng khuyết tật theo Đạo luật về người khuyết tật Hoa Kỳ (ADA)."
+
+  utter_symptoms_of_post_covid_19:
+  - text: "Triệu chứng chung:<br>
+  - Mệt mỏi hay chóng mặt, gây ảnh hưởng đến cuộc sống hàng ngày<br>
+  - Các triệu chứng sẽ trầm trọng hơn sau các hoạt động thể chất hoặc tinh thần<br>
+  (hay còn gọi là tình trạng khó chịu sau khi gắng sức)<br>
+  - Sốt<br>
+  - Các triệu chứng về hô hấp và tim<br>
+  - Khó thở hoặc hụt hơi<br>
+  - Ho<br>
+  - Đau ngực<br>
+  - Tim đập nhanh hoặc đập thình thịch (còn được gọi là trống ngực)<br>
+  Các triệu chứng về thần kinh:<br>
+  - Khó suy nghĩ hay tập trung (đôi khi còn được gọi là\"sương mù não\")<br>
+  - Đau đầu<br>
+  - Gặp vấn đề về giấc ngủ<br>
+  - Chóng mặt khi đứng dậy (choáng váng)<br>
+  - Cảm giác tê râm ran<br>
+  - Thay đổi về vị giác và khứu giác<br>
+  - Trầm cảm hoặc lo lắng<br>
+  Các triệu chứng về tiêu hóa:<br>
+  - Tiêu chảy<br>
+  - Đau bụng<br>
+  Các triệu chứng khác:<br>
+  - Đau cơ hay khớp<br>
+  - Phát ban<br>
+  - Thay đổi chu kỳ kinh nguyệt<br>"
+
+  utter_pet_and_human:
+  - text: " Dựa trên thông tin thu được ​​​​​​​ở thời điểm hiện tại, nguy cơ động vật lây lan COVID-19 cho con người được coi là thấp.<br>
+  Nhưng con người có thể lây SARS-CoV-2 cho động vật, đặc biệt là khi tiếp xúc gần."
+
+  utter_benefits_of_vaccination_against_covid_19:
+  - text: " Tiêm chủng COVID-19 là một cách xây dựng khả năng phòng bệnh an toàn hơn là để bị mắc COVID-19.<br>
+  Tiêm chủng COVID-19 giúp bảo vệ quý vị bằng cách tạo ra phản ứng kháng thể mà không phải trải qua tình trạng bị bệnh.<br>
+  Các loại vắc-xin ngừa COVID 19 đều an toàn và hiệu quả, có thể làm giảm nguy cơ nhiễm và làm lây lan loại vi-rút gây bệnh COVID-19.<br>
+  Vắc-xin ngừa COVID-19 cũng giúp phòng ngừa bệnh nghiêm trọng và tử vong ở trẻ em và người lớn, ngay cả khi họ nhiễm COVID-19."
+
+  utter_vaccine_safety:
+  - text: "Độ An Toàn và Giám Sát Vắc-xin<br>
+  - Các loại vắc-xin ngừa COVID-19 đã được phát triển dựa trên những nghiên cứu khoa học có từ hàng thập kỷ trước.<br>
+  - Vắc-xin ngừa COVID-19 là loại vắc-xin an toàn - an toàn hơn nhiều so với bị nhiễm COVID-19.<br>
+  - Vắc-xin ngừa COVID 19 có hiệu quả phòng bệnh nghiêm trọng do COVID-19 và hạn chế lây lan loại vi-rút gây bệnh này.<br>
+  - Hàng triệu người tại Hoa Kỳ đã được tiêm vắc-xin ngừa COVID-19 qua quá trình giám sát an toàn nghiêm ngặt nhất trong lịch sử Hoa Kỳ.<br>
+  - CDC khuyến cáo quý vị nên tiêm vắc-xin COVID-19 ngay khi có thể."
+
+  utter_vaccine_side_effects:
+  - text: "Một số người không có tác dụng phụ. Nhiều người báo cáo các tác dụng phụ, chẳng hạn như đau đầu,<br>
+  mệt mỏi và đau nhức tại chỗ tiêm, thường là nhẹ đến trung bình và sẽ hết trong vòng vài ngày."
+
+  utter_thanks:
+  - text: "Không có gì ạ!"
+
+  utter_goodbye:
+  - text: "Bái bai!"
+  - text: "Bye!"
+
+  utter_iamabot:
+  - text: "Tôi tên là Rasa. Một chatbot hỗ trợ thông tin về Covid-19!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

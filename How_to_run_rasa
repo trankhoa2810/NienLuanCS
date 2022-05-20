@@ -1,0 +1,4 @@
+run file index.html (Load giao diện chatbot)
+Sau đó lần lượt chạy 2 lệnh phía bên dưới: 
+rasa run --enable-api --cors="*" 
+rasa run actions

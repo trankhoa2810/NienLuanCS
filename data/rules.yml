@@ -1,0 +1,24 @@
+version: "3.0"
+
+rules:
+  
+- rule: Support question anytime the user say help
+  steps:
+  - intent: help
+  - action: utter_help
+  - action: utter_question
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say No problem anytime user say thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks

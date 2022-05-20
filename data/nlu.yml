@@ -1,0 +1,134 @@
+version: "3.0"
+
+nlu:
+- intent: help
+  examples: |
+    - Help
+    - help
+    - HELP
+    - Hép
+    - hép
+
+- intent: what_is_the_covid_19
+  examples: |
+    - Covid-19 là gì?
+    - Thế nào là covid-19?
+    - Covid-19 là bị gì?
+    - Covid là gì?
+
+- intent: manifestations_of_covid_19_disease
+  examples: |
+    - Các triệu chứng của covid-19 là gì?
+    - Những biểu hiện của bệnh covid 19 là gì?
+    - Covid-19 thường có những biểu hiện gì?
+    - Covid có những triệu chứng nào?
+    - Những triệu chứng của covid?
+    - Các biểu hiện của covid?
+
+- intent: treat_covid_19_at_home
+  examples: |
+    - Cách điều trị covid-19 tại nhà?
+    - Cách tự chăm sóc bản thân tại nhà khi bị nhiễm covid 19?
+    - Nên làm gì khi bị nhiễm bệnh covid-19?
+    - Cách tự điều trị covid tại nhà?
+    - Cách tự chăm sóc khi mắc covid?
+    - Cần làm những gì khi mắc covid?
+
+- intent: preventing_the_spread_of_covid_19
+  examples: |
+    - Cách phòng ngừa lây nhiễm covid-19?
+    - Làm sao để không bị nhiễm covid-19?
+    - Cần làm những gì để không bị nhiễm bệnh covid-19?
+    - Cách phòng ngừa covid-19?
+    - Cách phòng chống lây nhiễm covid?
+
+- intent: vaccine_time
+  examples: |
+    - Thời gian vaccine có tác dụng là bao lâu?
+    - Vaccine có tác dụng trong bao lâu?
+    - Thời gian vaccine có tác dụng kéo dài bao lâu?
+    - Vắc xin có tác dụng bao lâu?
+    - Vắc xin có công dụng trong bao lâu?
+
+- intent: what_is_the_post_covid_19
+  examples: |
+    - Hậu covid là gì?
+    - Thế nào là hậu covid-19?
+    - Hậu covid là bị gì?
+    - Hậu covid-19 là gì?
+
+- intent: symptoms_of_post_covid_19
+  examples: |
+    - Các triệu chứng của hậu covid-19 là gì?
+    - Hậu covid 19 có những biểu hiện nào?
+    - Những biểu hiện của hậu covid là gì?
+    - Các biểu hiện của hậu covid?
+    - Những triệu chứng của hậu covid?
+    - Các triệu chứng của hậu covid?
+
+- intent: pet_and_human
+  examples: |
+    - Thú cưng có lây covid-19 cho người được hay không?
+    - Chủ nhân có bị lây covid-19 từ thú cưng hay không?
+    - Con người có bị lây bệnh từ động vật hay không?
+    - Chó mèo có lây bệnh cho người được không?
+    - Thú nuôi có lây bệnh cho người không?
+    - Thú cưng có lây bệnh cho người hay không?
+
+- intent: benefits_of_vaccination_against_covid_19
+  examples: |
+    - Lợi ích khi tiêm chủng covid-19 là gì?
+    - Lợi ích của tiêm ngừa covid-19?
+    - Tiêm ngừa covid đầy đủ có những lợi ích gì?
+    - Tại sao phải tiêm ngừa covid-19?
+    - Tiêm ngừa covid có tác dụng gì?
+    - Lợi ích của tiêm vắc xin là gì?
+    - Tiêm vắc xin có công dụng gì?
+
+- intent: vaccine_safety
+  examples: |
+    - Tiêm Vaccine có an toàn không?
+    - Độ an toàn của vaccine có cao không?
+    - Vắc xin có an toàn không?
+    - Độ an toàn của vắc xin?
+    - Tiêm vắc xin ngừa covid-19 có an toàn không?
+
+- intent: vaccine_side_effects
+  examples: |
+    - Các tác dụng phụ của vaccin?
+    - Vắc xin có tác dụng phụ không?
+    - Những tác dụng phụ của vắc xin?
+    - Vắc xin có tác dụng phụ nào?
+
+- intent: how_many_case_in_day
+  examples: |
+    - Có bao nhiêu ca nhiễm trong hôm nay?
+    - Hôm nay có bao nhiêu ca nhiễm covid
+    - Số ca nhiễm covid ở Việt Nam hiện tại là bao nhiêu?
+    - Số ca nhiễm ở Việt Nam
+
+- intent: how_many_case_on_the_world
+  examples: |
+    - Số ca nhiễm trên thế giới?
+    - Số ca nhiễm trên thế giới hôm nay?
+    - Hôm nay thế giới có bao nhiêu ca nhiễm?
+
+- intent: thanks
+  examples: |
+    - Cảm ơn ạ!
+    - Thank you!
+    - Thanks!
+    - Cảm ơn nhiều ạ!
+
+- intent: goodbye
+  examples: |
+    - Bái bai!
+    - Tạm biệt!
+    - Bye!
+
+- intent: bot_challenge
+  examples: |
+    - Có phải bạn là bot không?
+    - Bạn có phải là còn người không?
+    - Có phải tôi đang nói chuyện với bot không?
+    - Tôi có đang nói chuyện với con người không?

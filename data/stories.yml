@@ -1,0 +1,121 @@
+xversion: "3.0"
+
+# - what_is_the_covid_19 #Covid 19 là gì? 
+# - manifestations_of_covid_19_disease # Các triệu chứng của covid 19?
+# - treat_covid_19_at_home # Cách điều trị covid 19 tại nhà?
+# - preventing_the_spread_of_covid_19 # Cách phòng ngừa lây nhiễm covid 19?
+# - vaccine_time # Thời gian vaccine có tác dụng?
+# - what_is_the_post_covid_19 # Hậu covid 19 là gì?
+# - symptoms_of_post_covid_19 # Biểu hiện của hậU covid?
+# - pet_and_human # Thú cưng có lây covid cho người hay không?
+# - benefits_of_vaccination_against_covid_19 # Lợi ích của tiêm vắc xin
+# - vaccine_safety # Tiêm vắc xin có an toàn không?
+# - vaccine_side_effects # Vắc xin có tác dụng phụ không?
+# - thanks # Lời cảm ơn
+# - goodbye # Tạm biệt
+# - bot_challenge # Bot trả lời thông tin.
+
+stories:
+
+- story: all question
+  steps:
+  - intent: help
+  - action: utter_help
+  - action: utter_question
+  - intent: what_is_the_covid_19
+  - action: utter_what_is_the_covid_19
+  - intent: manifestations_of_covid_19_disease
+  - action: utter_manifestations_of_covid_19_disease
+  - intent: treat_covid_19_at_home
+  - action: utter_treat_covid_19_at_home
+  - intent: preventing_the_spread_of_covid_19
+  - action: utter_preventing_the_spread_of_covid_19
+  - intent: vaccine_safety
+  - action: utter_vaccine_safety
+  - intent: benefits_of_vaccination_against_covid_19
+  - action: utter_benefits_of_vaccination_against_covid_19
+  - intent: vaccine_time
+  - action: utter_vaccine_time
+  - intent: vaccine_side_effects
+  - action: utter_vaccine_side_effects
+  - intent: what_is_the_post_covid_19
+  - action: utter_what_is_the_post_covid_19
+  - intent: symptoms_of_post_covid_19
+  - action: utter_symptoms_of_post_covid_19
+  - intent: pet_and_human
+  - action: utter_pet_and_human
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: about covid 19 1
+  steps:
+  - intent: what_is_the_covid_19
+  - action: utter_what_is_the_covid_19
+  - intent: manifestations_of_covid_19_disease
+  - action: utter_manifestations_of_covid_19_disease
+  - intent: treat_covid_19_at_home
+  - action: utter_treat_covid_19_at_home
+  - intent: preventing_the_spread_of_covid_19
+  - action: utter_preventing_the_spread_of_covid_19
+
+- story: about covid 19 2
+  steps:
+  - intent: what_is_the_covid_19
+  - action: utter_what_is_the_covid_19
+  - intent: treat_covid_19_at_home
+  - action: utter_treat_covid_19_at_home  
+  - intent: manifestations_of_covid_19_disease
+  - action: utter_manifestations_of_covid_19_disease
+  - intent: preventing_the_spread_of_covid_19
+  - action: utter_preventing_the_spread_of_covid_19  
+
+- story: about vaccine 1
+  steps:
+  - intent: vaccine_safety
+  - action: utter_vaccine_safety
+  - intent: benefits_of_vaccination_against_covid_19
+  - action: utter_benefits_of_vaccination_against_covid_19
+  - intent: vaccine_time
+  - action: utter_vaccine_time
+  - intent: vaccine_side_effects
+  - action: utter_vaccine_side_effects
+
+- story: about vaccine 2
+  steps:
+  - intent: benefits_of_vaccination_against_covid_19
+  - action: utter_benefits_of_vaccination_against_covid_19 
+  - intent: vaccine_side_effects
+  - action: utter_vaccine_side_effects  
+  - intent: vaccine_safety
+  - action: utter_vaccine_safety
+  - intent: vaccine_time
+  - action: utter_vaccine_time  
+
+- story: about post covid 19
+  steps:
+  - intent: what_is_the_post_covid_19
+  - action: utter_what_is_the_post_covid_19
+  - intent: symptoms_of_post_covid_19
+  - action: utter_symptoms_of_post_covid_19
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: about pet and human
+  steps:
+  - intent: pet_and_human
+  - action: utter_pet_and_human
+
+- story: cases in Viet Nam
+  steps:
+  - intent: how_many_case_in_day
+  - action: action_corona_tracker_viet_nam
+
+- story: cases on the world
+  steps:
+  - intent: how_many_case_on_the_world
+  - action: action_corona_tracker_on_the_world
+  
