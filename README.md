@@ -1,1 +1,1 @@
-# The ChatBot support infomation Covid19.
+# Chatbot to support information about covid 19.
